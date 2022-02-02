@@ -3,7 +3,7 @@
 /* Variables */
 
 $color-light: #fff;
-$color-dark: #444;
+$color-dark: rgb(175, 183, 209);
 
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
@@ -16,7 +16,10 @@ $font-text: 'Source Sans Pro', sans-serif;
 }
 
 body {
-  background: $color-light;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
