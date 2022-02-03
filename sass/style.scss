@@ -3,7 +3,7 @@
 /* Variables */
 
 $color-light: #fff;
-$color-dark: rgb(175, 183, 209);
+$color-dark: rgb(19, 18, 18);
 
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
@@ -16,10 +16,11 @@ $font-text: 'Source Sans Pro', sans-serif;
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("https://cdn.pixabay.com/photo/2017/04/10/15/04/spring-2218771_960_720.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   font-family: $font-text;
   color: $color-dark;
   font-weight: 300;
