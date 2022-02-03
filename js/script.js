@@ -48,29 +48,35 @@
   }
 
   const optArticleSelector = '.post',
-  optTitleSelector = '.post-title',
-  optTitleListSelector = '.titles',
+    optTitleSelector = '.post-title',
+    optTitleListSelector = '.titles',
 
-  generateTitleLinks = function () {
-    console.log('Start Page');
+    generateTitleLinks = function () {
+      console.log('Start Page');
 
-    /* [DONE] remove contents of titleList */
-    const titleList = document.querySelector(optTitleListSelector).innerHTML = '';
-    console.log("Remove contents title list: ", document.querySelector(optTitleListSelector));
+      /* [DONE] remove contents of titleList */
+      const titleList = document.querySelector(optTitleListSelector).innerHTML = '';
+      console.log("Remove contents title list: ", document.querySelector(optTitleListSelector));
 
-    /* for each article */
+      /* for each article */
+      const articles = document.querySelectorAll(optArticleSelector);
+      for (let article of articles) {
+        console.log(article)
 
-    /* get the article id */
+        /* get the article id */
+        const articleId = article.getAttribute('id');
+        console.log('Found article is :', articleId);
 
-    /* find the title element */
+        /* find the title element */
 
-    /* get the title from the title element */
+        /* get the title from the title element */
 
-    /* create HTML of the link */
+        /* create HTML of the link */
 
-    /* insert link into titleList */
+        /* insert link into titleList */
 
-  }
+      }
+    }
 
   generateTitleLinks();
 
