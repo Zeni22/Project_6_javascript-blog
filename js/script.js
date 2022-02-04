@@ -36,7 +36,6 @@
     optTitleListSelector = '.titles';
 
   function generateTitleLinks() {
-
     const titleList = document.querySelector(optTitleListSelector);
     titleList.innerHTML = ''
     console.log("Remove contents title list: ", document.querySelector(optTitleListSelector));
@@ -45,7 +44,6 @@
     let html = '';
 
     for (let article of articles) {
-
       const articleId = article.getAttribute('id');
       console.log('Found article is :', articleId);
 
@@ -57,10 +55,8 @@
 
       html = html + linkHTML;
       console.log('HTML after loop:', html);
-
-      titleList.innerHTML = titleList.innerHTML + linkHTML;
     }
-
+    
     titleList.innerHTML = html;
 
     const links = document.querySelectorAll('.titles a');
@@ -69,7 +65,6 @@
       link.addEventListener('click', titleClickHandler)
     }
   }
-
   generateTitleLinks();
   console.log('Title List after loop:', generateTitleLinks);
 }
