@@ -6,11 +6,11 @@
     const clickedElement = this;
     console.log(this);
     console.log('Link was clicked!');
-    console.log(event)
+    console.log(event);
 
     const activeLinks = document.querySelectorAll('.titles a.active');
     for (let activeLink of activeLinks) {
-      activeLink.classList.remove('active')
+      activeLink.classList.remove('active');
     }
 
     clickedElement.classList.add('active');
@@ -18,7 +18,7 @@
 
     const activeArticles = document.querySelectorAll('.post.active');
     for (let activeArticle of activeArticles) {
-      activeArticle.classList.remove('active')
+      activeArticle.classList.remove('active');
     }
 
     const articleSelector = clickedElement.getAttribute('href');
@@ -29,16 +29,16 @@
 
     targetArticle.classList.add('active');
     console.log('Added class active to :', clickedElement);
-  }
+  };
 
   const optArticleSelector = '.post',
     optTitleSelector = '.post-title',
     optTitleListSelector = '.titles';
 
-  function generateTitleLinks() {
+  const  generateTitleLinks = function () {
     const titleList = document.querySelector(optTitleListSelector);
-    titleList.innerHTML = ''
-    console.log("Remove contents title list: ", document.querySelector(optTitleListSelector));
+    titleList.innerHTML = '';
+    console.log('Remove contents title list: ', document.querySelector(optTitleListSelector));
 
     const articles = document.querySelectorAll(optArticleSelector);
     let html = '';
@@ -62,9 +62,9 @@
     const links = document.querySelectorAll('.titles a');
 
     for (let link of links) {
-      link.addEventListener('click', titleClickHandler)
+      link.addEventListener('click', titleClickHandler);
     }
-  }
+  };
   generateTitleLinks();
   console.log('Title List after loop:', generateTitleLinks);
 }
