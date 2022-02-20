@@ -104,7 +104,7 @@
     }
 
     const tagList = document.querySelector(optTagsListSelector);          /* [TagsRightColum] find list of tags in right column */
-    console.log('WTF:', tagList);
+    console.log('Tag List:', tagList);
     const tagsParams = calculateTagsParams(allTags);                      /* [TagsRightColum] create variable for all links HTML code */
     console.log('tagsParams:', tagsParams);
 
