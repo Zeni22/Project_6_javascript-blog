@@ -111,7 +111,7 @@
     let allTagsHTML = '';                                                 /* [CountingTags] create variable for all links HTML code */
 
     for(let tag in allTags){                                             /* [CountingTags] START LOOP: for each tag in allTags: */
-      allTagsHTML += '<li><a href="#tag-' + tag + '" class="' + calculateTagClass(allTags[tag], tagsParams) + '"><span>' + tag + ' (' + allTags[tag] + ') ' + '</span></a></li>';  /* [CountingTags] generate code of a link and add it to allTagsHTML */
+      allTagsHTML += '<li><a href="#tag-' + tag + '" class="' + calculateTagClass(allTags[tag], tagsParams) + '"><span>' + tag + ' ' + '</span></a></li>';  /* [CountingTags] generate code of a link and add it to allTagsHTML */
     }
     console.log('All Tags as HTML ', allTagsHTML);
     tagList.innerHTML = allTagsHTML;                                     /*[CountingTags] add HTML from allTagsHTML to tagList */
