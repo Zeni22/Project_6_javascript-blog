@@ -127,3 +127,29 @@ body {
   }
 }
 
+/*Tags*/
+a.tag-size-5{
+  font-size: 1.5em;
+  color: rgb(8, 141, 19);
+}
+a.tag-size-4{
+  font-size:1.25em;
+  color: rgb(180, 25, 25);
+}
+a.tag-size-3{
+  font-size:1em ;
+  color: rgb(255, 187, 0);
+}
+a.tag-size-2{
+  font-size: 1em;
+  color: rgb(243, 18, 130);
+}
+a.tag-size-1{
+  font-size: 1em;
+  color: rgb(8, 171, 246);
+}
+ul.tags li{
+  display: inline;
+}
+
+
