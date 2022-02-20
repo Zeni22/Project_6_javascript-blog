@@ -88,9 +88,11 @@
 
     for(let tag in allTags){                                              /* [CountingTags] START LOOP: for each tag in allTags: */
       allTagsHTML += '<li><a href="#tag-' + tag + ' (' + allTags[tag] + ') '+ '</a></li>';  /* [CountingTags] generate code of a link and add it to allTagsHTML */
-      console.log('All Tags as HTML ', allTagsHTML);
+
     }
-    tagList.innerHTML = allTagsHTML;                                      /*[CountingTags] add HTML from allTagsHTML to tagList */
+    console.log('All Tags as HTML ', allTagsHTML);
+    tagList.innerHTML = allTagsHTML;
+    console.log('WTF!', tagList);                                      /*[CountingTags] add HTML from allTagsHTML to tagList */
   };
   generateTags();
 
