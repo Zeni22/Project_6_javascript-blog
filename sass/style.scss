@@ -129,25 +129,39 @@ body {
   display: inline-block;
 }
 
-a.tag-size-5{
+.sidebar ul .tag-size-5{
   font-size: 1.5em;
-  color: rgb(8, 141, 19);
+    a {
+      color: rgb(8, 141, 19);
+    }
 }
-a.tag-size-4{
+
+.sidebar ul .tag-size-4{
   font-size:1.25em;
-  color: rgb(180, 25, 25);
+  a {
+    color: rgb(180, 25, 25);
+  }
 }
-a.tag-size-3{
+
+.sidebar ul .tag-size-3{
   font-size:1em ;
-  color: rgb(255, 187, 0);
+  a {
+    color: rgb(255, 187, 0);
+  }
 }
-a.tag-size-2{
+
+.sidebar ul .tag-size-2{
   font-size: 1em;
-  color: rgb(243, 18, 130);
+  a {
+    color: rgb(243, 18, 130);
+  }
 }
-a.tag-size-1{
+
+.sidebar ul .tag-size-1{
   font-size: 1em;
-  color: rgb(8, 171, 246);
+  a {
+    color: rgb(8, 171, 246);
+  }
 }
 
 /* Authors */
